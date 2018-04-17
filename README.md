@@ -1,1 +1,2 @@
 # data-structures-and-algorithms
+This is a repository to 401d23 whiteboard challenges. Each whiteboard challenge will contain a separate README with the challenge and an image of the completed whiteboard, and a JS file with the tested answer.
