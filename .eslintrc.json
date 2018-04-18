@@ -9,6 +9,7 @@
     "no-param-reassign": ["error", { "props": false }],
     "no-trailing-spaces":"off",
     "linebreak-style": "off",
-    "strict": "off"
+    "strict": "off",
+    "no-plusplus": ["error", { "allowForLoopAfterthoughts": true }]
   }
 }
