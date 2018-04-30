@@ -9,16 +9,17 @@ class Queue {
   enqueue(value) {
     this.stackA.push(value);
   }
-  
+
   dequeue() {
-    for (let i = 0; i < this.stackA.length + 1; i++) {
+    const length = this.stackA.length;
+    for (let i = 0; i < length; i++) {
       const temp = this.stackA.pop();
       this.stackB.push(temp);
     }
-    console.log(this.stackB);
     const popped = this.stackB.pop();
-    console.log(popped);
-    for (let i = 0; i < this.stackB.length; i++) {
+
+    const length2 = this.stackB.length;
+    for (let i = 0; i < length2; i++) {
       const temp2 = this.stackB.pop();
       this.stackA.push(temp2);
     }

@@ -4,33 +4,29 @@ const Queue = require('../queue-with-stacks');
 
 describe('queue-with-stacks.js', () => {
   it('#constructor', () => {
-    const testStack = new Queue();
+    const testQueue = new Queue();
     
-    expect(testStack.stackA).toEqual([]);
+    expect(testQueue.stackA).toEqual([]);
   });
 
   it('#enqueue', () => {
-    const testStack = new Queue();
-    testStack.enqueue(1);
-    testStack.enqueue(2);
-    testStack.enqueue(3);
+    const testQueue = new Queue();
+    testQueue.enqueue(1);
+    testQueue.enqueue(2);
+    testQueue.enqueue(3);
 
-    expect(testStack.stackA[0]).toEqual(1);
-    expect(testStack.stackA[1]).toEqual(2);
-    expect(testStack.stackA[2]).toEqual(3);
+    expect(testQueue.stackA[0]).toEqual(1);
+    expect(testQueue.stackA[1]).toEqual(2);
+    expect(testQueue.stackA[2]).toEqual(3);
   });
 
   it('#dequeue', () => {
-    const testStack = new Queue();
-    testStack.enqueue(1);
-    testStack.enqueue(2);
-    testStack.enqueue(3);
-    expect(testStack.stackA).toEqual([1, 2, 3]);
-    expect(testStack.dequeue()).toEqual(1);
-
-    // const testStack2 = new Stack();
-    // testStack.enqueue(2);
-    // testStack.enqueue(3);    
-
+    const testQueue = new Queue();
+    testQueue.enqueue(7);
+    testQueue.enqueue(9);
+    testQueue.enqueue(11);
+    expect(testQueue.stackA).toEqual([7, 9, 11]);
+    expect(testQueue.dequeue()).toEqual(7);
+    expect(testQueue.stackA).toEqual([9, 11]);
   });
 });
