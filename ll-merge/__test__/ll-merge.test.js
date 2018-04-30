@@ -67,6 +67,6 @@ describe('ll-merge.js', () => {
     L9.append(5);
     L9.append(6);
     
-    expect(mergeLists(L7, L8)).toEqual(L9);
+    expect(mergeLists(L7, L8)).toMatchObject(L9);
   });
 });
