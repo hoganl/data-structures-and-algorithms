@@ -1,7 +1,7 @@
 'use strict';
 
-const LinkedList = require('../lib/linked-list');
-const Node = require('../lib/node');
+const LinkedList = require('../ll_insertions');
+const Node = require('../node');
 
 describe('ll_insertions.js', () => {
   it('#constructor', () => {
@@ -24,10 +24,11 @@ describe('ll_insertions.js', () => {
     expect(testList.head.next.next.value).toEqual(7);
   });
 
-  test('#insertBefore', () => {
-    const testList = new LinkedList();
+  // test('#insertBefore', () => {
+  //   const testList = new LinkedList();
 
-    testList.append(5);
-    testList.insertBefore(8);
-    expect()
-  })
+  //   testList.append(5);
+  //   testList.insertBefore(8);
+  //   expect()
+  // });
+});
