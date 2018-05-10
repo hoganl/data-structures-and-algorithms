@@ -12,4 +12,4 @@ const binarySearch = (array, key) => {
   return undefined;
 };
 
-exports.binarySearch = binarySearch;
+export default binarySearch;
